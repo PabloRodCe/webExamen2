@@ -8,26 +8,45 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+  <>
+  <a className="btn btn-primary" href="#" role="button">
+    
+  </a>
+  <button className="btn btn-primary" type="submit">
+    Task
+  </button>
+  <button className="btn btn-primary" type="submit">
+    Eliminar
+  </button>
+ 
+</>
+<div className="container-ms">{<>
+  <div className="form-check">
+    <input
+      className="form-check-input"
+      type="checkbox"
+      defaultValue=""
+      id="checkDefault"
+    />
+    <label className="form-check-label" htmlFor="checkDefault">
+      Default checkbox
+    </label>
+  </div>
+  <div className="form-check">
+    <input
+      className="form-check-input"
+      type="checkbox"
+      defaultValue=""
+      id="checkChecked"
+      defaultChecked=""
+    />
+    <label className="form-check-label" htmlFor="checkChecked">
+      Checked checkbox
+    </label>
+  </div>
+</>}</div>
+
+
     </>
   )
 }
