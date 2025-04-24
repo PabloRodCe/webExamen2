@@ -1,6 +1,6 @@
 import React from "react";
 
-function TaskList({task,eliminar,tocar}){
+function TaskList({task,onDelete,onToggle}){
     return(
      <div> 
      {task.lengt === 0 ?(
@@ -10,8 +10,8 @@ function TaskList({task,eliminar,tocar}){
             <task
             key={tarea.id}
             tarea={tarea}
-            eliminar={eliminar}
-            tocar={tocar}
+            onDelete={onDelete}
+            onToggle={onToggle}
             />
         ))
      )}
